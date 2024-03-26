@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: radial-gradient;
+    }
+    
+    .login-container {
+        box-sizing: border-box;
+        width: 400px;
+        height: 400px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+        position: relative;
+    }
+    
+    input[type="text"],
+    input[type="password"]{
+        background-color: rgba(232, 230, 230, 0.3);
+        width: 300px;
+        height: 24px;
+        padding: 8px;
+        border: none;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    input[type="text"]::placeholder{
+     box-sizing: border-box;
+     padding-left: 50px;
+     color: black;
+     font-size: 14px;
+    }
+    input[type="password"]::placeholder{
+     box-sizing: border-box;
+     padding-left: 10px;
+     color: black;
+     font-size: 14px;
+    }
+    #userimage{
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    border-radius: 50px;
+    }
+    #passwordlock{
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    border-radius: 50px;
+    }
+    button {
+        width: 320px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        background-color: #fff;
+        color: #161616;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .background {
+        background: linear-gradient(to left top, #01212e 50%, #00292d 50%);
+    }</style>
+    <div class="login-container background">
+        <h2>USER LOGIN</h2>
+        <form>
+            <div class="form-group">
+                <img src="User.jpg" alt="userlogo" id="userimage" width="50px">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <img src="Lock1.jpg" alt="locklogo" id="passwordlock" width="50px">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+           
+            <button type="submit">LOGIN</button>
+      
+        </form>
+    </div>
+</body>
+</html>
